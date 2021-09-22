@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/styles.css">
+    <title>jogo da velha</title>
+</head>
+
+<body>
+    <main class="container-principal">
+        <section class="container-left">
+            <div class="all-right-left-wrapper">
+                <form action="" class="form">
+                    <div class="field-wrapper">
+                        <input class="field-name1" type="text" placeholder="jogador 1">
+                    </div>
+                    <div class="field-wrapper">
+                        <input class="field-name2" type="text" placeholder="jogador 2">
+                        <div class="wrapper-hover">
+                            <div class="hover-button none">
+                                <div class="ball none"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>tipo de partida</h3>
+                    <div class="wrapper-type-game">
+                        <span class="md3">melhor de 3</span>
+                        <div class="hover-button">
+                            <button class="ball"></button>
+                        </div>
+                        <span class="md5">melhor de 5</span>
+                    </div>
+                    <div class="wrapper-button-deafult">
+                        <button class="button-deafult button-starter">jogar</button>
+                    </div>
+                </form>
+                <span>historico de partidas</span>
+                <ul class="history-wrapper">
+                    <!-- <li class="scenary-game">
+                        <div class="winner-wrapper">
+                            <div class="winner">
+                                <div class="data-winner-history">
+                                    <span class="text-box-left"></span>
+                                    <span class="text-box-left"> </span>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="text-box-left">cenário</span>
+                        <div class="battlefield--historic--mini battlefield">
+                            <div class="field--mini minifield1"></div>
+                            <div class="field--mini minifield2"></div>
+                            <div class="field--mini minifield3"></div>
+                            <div class="field--mini minifield4"></div>
+                            <div class="field--mini minifield5"></div>
+                            <div class="field--mini minifield6"></div>
+                            <div class="field--mini minifield7"></div>
+                            <div class="field--mini minifield8"></div>
+                            <div class="field--mini minifield9"></div>
+                        </div>
+                    </li> -->
+                    <!--<li class="scenary-game">
+                        <div class="winner-wrapper">
+                            <div class="winner">
+                                <div class="data-winner-history">
+                                    <span>vencedor</span>
+                                    <span>primeiro quadrado</span>
+                                </div>
+                            </div>
+                        </div>
+                        <span>cenário</span>
+                        <div class="battlefield--historic--mini battlefield">
+                            <div class="field--mini minifield1"></div>
+                            <div class="field--mini minifield2"></div>
+                            <div class="field--mini minifield3"></div>
+                            <div class="field--mini minifield4"></div>
+                            <div class="field--mini minifield5"></div>
+                            <div class="field--mini minifield6"></div>
+                            <div class="field--mini minifield7"></div>
+                            <div class="field--mini minifield8"></div>
+                            <div class="field--mini minifield9"></div>
+                        </div>
+                    </li>
+                    <li class="scenary-game">
+                        <div class="winner-wrapper">
+                            <div class="winner">
+                                <div class="data-winner-history">
+                                    <span>vencedor</span>
+                                    <span>primeiro quadrado</span>
+                                </div>
+                            </div>
+                        </div>
+                        <span>cenário</span>
+                        <div class="battlefield--historic--mini battlefield">
+                            <div class="field--mini minifield1"></div>
+                            <div class="field--mini minifield2"></div>
+                            <div class="field--mini minifield3"></div>
+                            <div class="field--mini minifield4"></div>
+                            <div class="field--mini minifield5"></div>
+                            <div class="field--mini minifield6"></div>
+                            <div class="field--mini minifield7"></div>
+                            <div class="field--mini minifield8"></div>
+                            <div class="field--mini minifield9"></div>
+                        </div>
+                    </li>
+                    <div class="scenary-game">
+                        <div class="winner-wrapper">
+                            <div class="winner">
+                                <div class="data-winner-history">
+                                    <span>vencedor</span>
+                                    <span>primeiro quadrado</span>
+                                </div>
+                            </div>
+                        </div>
+                        <span>cenário</span>
+                        <div class=" battlefield--historic--mini battlefield ">
+                            <div class="field--mini minifield1"></div>
+                            <div class="field--mini minifield2"></div>
+                            <div class="field--mini minifield3"></div>
+                            <div class="field--mini minifield4"></div>
+                            <div class="field--mini minifield5"></div>
+                            <div class="field--mini minifield6"></div>
+                            <div class="field--mini minifield7"></div>
+                            <div class="field--mini minifield8"></div>
+                            <div class="field--mini minifield9"></div>
+                        </div>
+                    </div> -->
+                </ul>
+                <div class="wrapper-button-deafult">
+                    <button class="button-deafult button-reset">reiniciar</button>
+                </div>
+            </div>
+            <!-- <input type="text" placeholder="jogador 1"> -->
+        </section>
+        <section class="container-center">
+            <div class="wrapper-all-center">
+                <h1>bem vindo ao jogo da velha</h1>
+                <h2>clique em "jogar" para começar</h2>
+                <div class="scoreboard">
+                    <span>placar</span>
+                    <div class="points">
+                        <div class="points-player points-player-1"></div>
+                        <span class="winner-round"></span>
+                        <div class="points-player points-player-2"></div>
+                    </div>
+                </div>
+                <div class="battlefield">
+                    <span class="field field0"></span>
+                    <span class="field field1"></span>
+                    <span class="field field2"></span>
+                    <span class="field field3"></span>
+                    <span class="field field4"></span>
+                    <span class="field field5"></span>
+                    <span class="field field6"></span>
+                    <span class="field field7"></span>
+                    <span class="field field8"></span>
+                </div>
+            </div>
+        </section>
+        <section class="container-right">
+            <div class="all-right-left-wrapper">
+                <span>historico de jogadas</span>
+                <ul class="history-wrapper-right">
+                    <!-- <li class="moves-rounds">
+                        <div class="who-played">x</div>
+                        <div class="data-winner-history">
+                            <span>vencedor</span>
+                            <span>primeiro quadrado</span>
+                        </div>
+                    </li>
+                    <li class="moves-rounds">
+                        <div class="who-played">x</div>
+                        <div class="data-winner-history">
+                            <span>vencedor</span>
+                            <span>primeiro quadrado</span>
+                        </div>
+                    </li>
+                    <li class="moves-rounds">
+                        <div class="who-played">x</div>
+                        <div class="data-winner-history">
+                            <span>vencedor</span>
+                            <span>primeiro quadrado</span>
+                        </div>
+                    </li>
+                    <li class="moves-rounds">
+                        <div class="who-played">x</div>
+                        <div class="data-winner-history">
+                            <span>vencedor</span>
+                            <span>primeiro quadrado</span>
+                        </div>
+                    </li>
+                    <li class="moves-rounds">
+                        <div class="who-played">x</div>
+                        <div class="data-winner-history">
+                            <span>vencedor</span>
+                            <span>primeiro quadrado</span>
+                        </div>
+                    </li>
+                    <li class="moves-rounds">
+                        <div class="who-played">x</div>
+                        <div class="data-winner-history">
+                            <span>vencedor</span>
+                            <span>primeiro quadrado</span>
+                        </div>
+                    </li>
+                    <li class="moves-rounds">
+                        <div class="who-played">x</div>
+                        <div class="data-winner-history">
+                            <span>vencedor</span>
+                            <span>primeiro quadrado</span>
+                        </div>
+                    </li>
+                    <li class="moves-rounds">
+                        <div class="who-played">x</div>
+                        <div class="data-winner-history">
+                            <span>vencedor</span>
+                            <span>primeiro quadrado</span>
+                        </div>
+                    </li>
+                    <li class="moves-rounds">
+                        <div class="who-played">x</div>
+                        <div class="data-winner-history">
+                            <span>vencedor</span>
+                            <span>primeiro quadrado</span>
+                        </div>
+                    </li>
+                    <li class="moves-rounds">
+                        <div class="who-played">x</div>
+                        <div class="data-winner-history">
+                            <span>vencedor</span>
+                            <span>primeiro quadrado</span>
+                        </div>
+                    </li>
+                    <li class="moves-rounds">
+                        <div class="who-played">x</div>
+                        <div class="data-winner-history">
+                            <span>vencedor</span>
+                            <span>primeiro quadrado</span>
+                        </div>
+                    </li>
+                    <li class="moves-rounds">
+                        <div class="who-played">x</div>
+                        <div class="data-winner-history">
+                            <span>vencedor</span>
+                            <span>primeiro quadrado</span>
+                        </div>
+                    </li> -->
+                </ul>
+                <div class="credits">
+                    <div class="my-logo">
+                        <span>feito por:Eric Macedo de Lira</span>
+                        <img src="./src/images/minha logo.png" alt="">
+                    </div>
+                    <span class="text-credit">elaborado por:how to code</span>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./src/scripts/scripts.js"></script>
+</body>
+
+</html>
